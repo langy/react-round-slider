@@ -243,6 +243,7 @@ export const RoundSlider = (props: ISettings) => {
                         borderColor: pointer.borderColor,
                         disabled: pointer.disabled,
                         ariaLabel: pointer.ariaLabel,
+                        svg: pointer.svg
                     };
                 });
 

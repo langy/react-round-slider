@@ -140,6 +140,7 @@ export const initPointers = (
             border: getNumber(settings.pointerBorder, DEFAULT_POINTER_BORDER),
             borderColor: getString(settings.pointerBorderColor, DEFAULT_POINTER_BORDER_COLOR),
             disabled: !!settings.disabled,
+            svg: null
         }]
     }
 
@@ -191,6 +192,7 @@ export const initPointers = (
 
             disabled,
             ariaLabel: settingPointer.ariaLabel,
+            svg: settingPointer.svg,
         });
     }
 
