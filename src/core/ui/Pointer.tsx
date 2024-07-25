@@ -303,7 +303,7 @@ const Pointer = (props: IPointerProps) => {
                     style={ outlineNoneStyle }>
 
                     {
-                        !settings.pointerSVG &&
+                        (!settings.pointerSVG || !pointer.svg) &&
                         <circle
                             cx={ radius/2 }
                             cy={ radius/2 }
@@ -318,7 +318,14 @@ const Pointer = (props: IPointerProps) => {
                     }
 
                     {
-                        settings.pointerSVG &&
+                        pointer.svg &&
+                        <g>
+                            { pointer.svg }
+                        </g>
+                    }
+
+                    {
+                        !pointer.svg && settings.pointerSVG &&
                         <g>
                             { settings.pointerSVG }
                         </g>
