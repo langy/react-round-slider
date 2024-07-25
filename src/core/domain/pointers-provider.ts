@@ -39,6 +39,7 @@ export interface IPointer {
 
     disabled: boolean;
     ariaLabel?: string;
+    svg?: React.ReactNode;
 }
 
 export interface IPointers {

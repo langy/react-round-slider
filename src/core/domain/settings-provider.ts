@@ -101,4 +101,5 @@ export interface ISettingsPointer {
     borderColor?: string;
     disabled?: boolean;
     ariaLabel?: string;
+    svg?: React.ReactNode;
 }
