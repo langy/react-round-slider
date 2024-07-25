@@ -80,6 +80,7 @@ declare module 'mz-react-round-slider' {
         borderColor?: string;
         disabled?: boolean;
         ariaLabel?: string;
+        svg?: ReactNode;
     }
 
     export interface ICircle {
@@ -121,6 +122,7 @@ declare module 'mz-react-round-slider' {
         borderColor: string;
         disabled: boolean;
         ariaLabel?: string;
+        svg?: ReactNode;
     }
 
     export interface IPointers {
